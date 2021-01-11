@@ -7,7 +7,16 @@
 
 import Foundation
 
-class AlbumsFeedViewModel {
+protocol AlbumsFeedViewModelType: class {
+    var numberOfAlbums: Int { get }
+    var albums: [Album] { get }
+    var OnFeedUpdate: (() -> ())? { get set }
+    func album(at indexPath: IndexPath) -> Album
+    func fetchAlbums(success: @escaping (AlbumFeed) -> Void, failure: @escaping (Error) -> Void)
+}
+
+class AlbumsFeedViewModel: AlbumsFeedViewModelType {
+
     private let networkDependency: AlbumsProviderType
     
     private(set) var albumFeed: AlbumFeed? {

@@ -9,11 +9,11 @@ import UIKit
 
 class AlbumsViewController: UITableViewController {
 
-    let viewModel: AlbumsFeedViewModel
+    let viewModel: AlbumsFeedViewModelType
     let imageCache = ImageCache.shared
 
     // MARK: - Init
-    init(viewModel: AlbumsFeedViewModel = AlbumsFeedViewModel()) {
+    init(viewModel: AlbumsFeedViewModelType = AlbumsFeedViewModel()) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
     }

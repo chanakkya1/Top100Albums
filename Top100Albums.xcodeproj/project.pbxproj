@@ -156,8 +156,8 @@
 		BA87090725AC1FD600AE1235 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				BA8708FD25ABDC5C00AE1235 /* AlbumsDetailViewController.swift */,
 				BA63D8A625A4C40700DA1895 /* AlbumsViewController.swift */,
+				BA8708FD25ABDC5C00AE1235 /* AlbumsDetailViewController.swift */,
 				BA528BE125AA420800CFD868 /* AlbumTableViewCell.swift */,
 			);
 			path = ViewControllers;
