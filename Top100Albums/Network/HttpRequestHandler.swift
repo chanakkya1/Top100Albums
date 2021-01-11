@@ -7,7 +7,11 @@
 
 import Foundation
 
-class HttpRequestHandler {
+protocol HttpRequestHandlerType {
+    func jsonRequest<ResponseEntity: Codable>(_ request: URLRequest, completionHandler: @escaping (Result<ResponseEntity, Error>) -> Void)
+}
+
+class HttpRequestHandler:  HttpRequestHandlerType {
 
     private let session: URLSession = {
         let configuration: URLSessionConfiguration  = {

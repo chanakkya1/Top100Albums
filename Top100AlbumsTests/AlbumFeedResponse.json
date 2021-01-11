@@ -1,0 +1,74 @@
+{
+   "feed":{
+      "title":"Top Albums",
+      "id":"https://rss.itunes.apple.com/api/v1/us/apple-music/top-albums/all/100/explicit.json",
+      "author":{
+         "name":"iTunes Store",
+         "uri":"http://wwww.apple.com/us/itunes/"
+      },
+      "links":[
+         {
+            "self":"https://rss.itunes.apple.com/api/v1/us/apple-music/top-albums/all/100/explicit.json"
+         },
+         {
+            "alternate":"https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewTop?genreId=34\u0026popId=82\u0026app=music"
+         }
+      ],
+      "copyright":"Copyright © 2018 Apple Inc. All rights reserved.",
+      "country":"us",
+      "icon":"http://itunes.apple.com/favicon.ico",
+      "updated":"2021-01-10T04:49:36.000-08:00",
+      "results":[
+         {
+            "artistName":"Lil Durk",
+            "id":"1545996283",
+            "releaseDate":"2020-12-24",
+            "name":"The Voice",
+            "kind":"album",
+            "copyright":"℗ 2020 Alamo (Geffen Records)",
+            "artistId":"541282483",
+            "contentAdvisoryRating":"Explicit",
+            "artistUrl":"https://music.apple.com/us/artist/lil-durk/541282483?app=music",
+            "artworkUrl100":"https://is3-ssl.mzstatic.com/image/thumb/Music124/v4/73/d6/ac/73d6acf8-b00b-f78c-1cd9-19b189a829c5/20UM1IM18139.rgb.jpg/200x200bb.png",
+            "genres":[
+               {
+                  "genreId":"18",
+                  "name":"Hip-Hop/Rap",
+                  "url":"https://itunes.apple.com/us/genre/id18"
+               },
+               {
+                  "genreId":"34",
+                  "name":"Music",
+                  "url":"https://itunes.apple.com/us/genre/id34"
+               }
+            ],
+            "url":"https://music.apple.com/us/album/the-voice/1545996283?app=music"
+         },
+         {
+            "artistName":"Megan Thee Stallion",
+            "id":"1540031620",
+            "releaseDate":"2020-11-20",
+            "name":"Good News",
+            "kind":"album",
+            "copyright":"℗ 2020 1501 Certified Ent. LLC / 300 Entertainment",
+            "artistId":"1258989914",
+            "contentAdvisoryRating":"Explicit",
+            "artistUrl":"https://music.apple.com/us/artist/megan-thee-stallion/1258989914?app=music",
+            "artworkUrl100":"https://is3-ssl.mzstatic.com/image/thumb/Music124/v4/5d/86/c3/5d86c3f7-0c56-9fe1-fb44-5a763d4ef6c8/810043683203.jpg/200x200bb.png",
+            "genres":[
+               {
+                  "genreId":"18",
+                  "name":"Hip-Hop/Rap",
+                  "url":"https://itunes.apple.com/us/genre/id18"
+               },
+               {
+                  "genreId":"34",
+                  "name":"Music",
+                  "url":"https://itunes.apple.com/us/genre/id34"
+               }
+            ],
+            "url":"https://music.apple.com/us/album/good-news/1540031620?app=music"
+         }
+      ]
+   }
+}

@@ -39,6 +39,7 @@ class AlbumsViewController: UITableViewController {
     private func setupView() {
         title = "Top 100 Albums"
         tableView.rowHeight = 67.0
+        tableView.allowsMultipleSelection = false
         clearsSelectionOnViewWillAppear = true
     }
 
@@ -47,7 +48,15 @@ class AlbumsViewController: UITableViewController {
     }
 
     func refresh() {
-        viewModel.fetchAlbums(success: { _ in }, failure: { _ in })
+        let activityIndicator = UIActivityIndicatorView(style: .large)
+        activityIndicator.startAnimating()
+        view.addSubview(activityIndicator)
+        activityIndicator.pinToSuperviewCenter(offsetX: 0, offsetY: 0)
+        viewModel.fetchAlbums(success: { _ in
+            activityIndicator.isHidden = true
+        }, failure: { _ in
+            activityIndicator.isHidden = true
+        })
     }
 
 

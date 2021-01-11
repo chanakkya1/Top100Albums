@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Album: Codable {
+struct Album: Codable, Equatable {
     let id: String
     let artistName: String
     let releaseDate: String
@@ -21,16 +21,16 @@ class Album: Codable {
     let url: URL
 }
 
-class Genre: Codable {
+struct Genre: Codable, Equatable {
     let genreId: String
     let name: String
     let url: URL
 }
 
-class AlbumFeed: Codable {
+struct AlbumFeed: Codable, Equatable {
     let feed: Feed
 
-    struct Feed: Codable {
+    struct Feed: Codable, Equatable {
         let title: String
         let id: URL?
         let copyright: String?

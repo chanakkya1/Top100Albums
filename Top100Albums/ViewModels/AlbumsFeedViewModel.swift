@@ -8,7 +8,7 @@
 import Foundation
 
 class AlbumsFeedViewModel {
-    private let networkDependency: AlbumsProvider
+    private let networkDependency: AlbumsProviderType
     
     private(set) var albumFeed: AlbumFeed? {
         didSet {
@@ -17,7 +17,7 @@ class AlbumsFeedViewModel {
     }
     var OnFeedUpdate: (() -> ())?
 
-    init(networkDependency: AlbumsProvider = AlbumsProvider()) {
+    init(networkDependency: AlbumsProviderType = AlbumsProvider()) {
         self.networkDependency = networkDependency
     }
 

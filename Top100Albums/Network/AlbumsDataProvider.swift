@@ -7,10 +7,15 @@
 
 import Foundation
 
-class AlbumsProvider {
-    private let httpRequestHandler: HttpRequestHandler
+protocol AlbumsProviderType {
+    func getTop100Albums(success: @escaping (AlbumFeed) -> Void, failure: @escaping (Error) -> Void)
+}
 
-    init(httpRequestHandler: HttpRequestHandler? = nil) {
+
+class AlbumsProvider: AlbumsProviderType {
+    private let httpRequestHandler: HttpRequestHandlerType
+
+    init(httpRequestHandler: HttpRequestHandlerType? = nil) {
         self.httpRequestHandler = httpRequestHandler ?? HttpRequestHandler()
     }
 
